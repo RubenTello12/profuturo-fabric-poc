@@ -19,7 +19,7 @@ table rendimientos
 		sourceProviderType: bigint
 		lineageTag: ec1dbb2f-78ac-483d-9c89-27c865a805db
 		sourceLineageTag: id_siefore
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: id_siefore
 
 		annotation SummarizationSetBy = Automatic

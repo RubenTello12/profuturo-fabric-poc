@@ -8,7 +8,7 @@ table siefores
 		sourceProviderType: bigint
 		lineageTag: 1b770dea-4912-403f-9daf-5d1277db8de8
 		sourceLineageTag: id_siefore
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: id_siefore
 
 		annotation SummarizationSetBy = Automatic

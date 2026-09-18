@@ -19,7 +19,7 @@ table aportaciones
 		sourceProviderType: bigint
 		lineageTag: 2735f48d-064c-40b5-a529-819c521f1c35
 		sourceLineageTag: id_cuenta
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: id_cuenta
 
 		annotation SummarizationSetBy = Automatic

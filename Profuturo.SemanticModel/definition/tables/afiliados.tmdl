@@ -8,7 +8,7 @@ table afiliados
 		sourceProviderType: bigint
 		lineageTag: 826fef71-2e1b-49a1-bbd8-a523b870a1c0
 		sourceLineageTag: id_afiliado
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: id_afiliado
 
 		annotation SummarizationSetBy = Automatic

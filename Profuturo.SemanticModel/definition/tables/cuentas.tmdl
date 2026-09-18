@@ -8,7 +8,7 @@ table cuentas
 		sourceProviderType: bigint
 		lineageTag: 8e4fd3fe-e521-47da-969e-0687fa0102c0
 		sourceLineageTag: id_cuenta
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: id_cuenta
 
 		annotation SummarizationSetBy = Automatic
@@ -19,7 +19,7 @@ table cuentas
 		sourceProviderType: bigint
 		lineageTag: 510c9916-5a6e-4b22-8b73-97dbc02f0eb5
 		sourceLineageTag: id_afiliado
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: id_afiliado
 
 		annotation SummarizationSetBy = Automatic
@@ -40,7 +40,7 @@ table cuentas
 		sourceProviderType: int
 		lineageTag: 2790ee32-5630-47c6-98eb-5565b771132c
 		sourceLineageTag: id_siefore
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: id_siefore
 
 		annotation SummarizationSetBy = Automatic

@@ -1,0 +1,18 @@
+relationship bb69d6be-0ede-dd85-d5d6-b149c9ff65bb
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: afiliados.id_afiliado
+	toColumn: cuentas.id_afiliado
+
+relationship 74c55461-dbef-6a4d-12c8-23d3417bac3a
+	fromColumn: aportaciones.id_cuenta
+	toColumn: cuentas.id_cuenta
+
+relationship 5e25dfea-8366-39a3-7e6d-9a9b6d3d9f15
+	fromColumn: cuentas.id_siefore
+	toColumn: siefores.id_siefore
+
+relationship 87bb88c8-beba-e6b2-379d-41a6ac48666b
+	fromColumn: rendimientos.id_siefore
+	toColumn: siefores.id_siefore
+
