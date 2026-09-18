@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Profuturo"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "77d10d59-7c2b-9809-434e-278e25b01342"
+  }
+}

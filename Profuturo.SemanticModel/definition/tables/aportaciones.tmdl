@@ -1,0 +1,79 @@
+table aportaciones
+	lineageTag: c36b7499-a2b0-4ac2-bd02-88cf3ce45cbc
+	sourceLineageTag: [afore_data].[aportaciones]
+
+	column id_aportacion
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 59f2f84f-2e6c-4f9e-863e-e7fd535090b3
+		sourceLineageTag: id_aportacion
+		summarizeBy: sum
+		sourceColumn: id_aportacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_cuenta
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 2735f48d-064c-40b5-a529-819c521f1c35
+		sourceLineageTag: id_cuenta
+		summarizeBy: sum
+		sourceColumn: id_cuenta
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 8876a90d-cb08-439f-9719-5dd392102309
+		sourceLineageTag: fecha
+		summarizeBy: none
+		sourceColumn: fecha
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_aportacion
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: 42911231-ea0b-4b25-8cc6-0864858b205b
+		sourceLineageTag: tipo_aportacion
+		summarizeBy: none
+		sourceColumn: tipo_aportacion
+
+		annotation SummarizationSetBy = Automatic
+
+	column monto
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 75a4ce4a-63d9-49d5-a688-d6e80d5047aa
+		sourceLineageTag: monto
+		summarizeBy: sum
+		sourceColumn: monto
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column anio
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 0ab73bfb-ddd7-42d8-bcf4-8c016c0bbc74
+		sourceLineageTag: anio
+		summarizeBy: sum
+		sourceColumn: anio
+
+		annotation SummarizationSetBy = Automatic
+
+	partition aportaciones = entity
+		mode: directLake
+		source
+			entityName: aportaciones
+			schemaName: afore_data
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "LH_Profuturo"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "03a3d7ea-2f55-b625-49ef-e4bbee612d6c"
+  }
+}

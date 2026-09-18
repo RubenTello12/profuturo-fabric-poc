@@ -1,0 +1,78 @@
+table afiliados
+	lineageTag: de25d8ba-0d56-45bd-8060-b4689a2ff43f
+	sourceLineageTag: [afore_data].[afiliados]
+
+	column id_afiliado
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 826fef71-2e1b-49a1-bbd8-a523b870a1c0
+		sourceLineageTag: id_afiliado
+		summarizeBy: sum
+		sourceColumn: id_afiliado
+
+		annotation SummarizationSetBy = Automatic
+
+	column edad
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: c3c90f64-a95b-496b-9a73-e63710911b0f
+		sourceLineageTag: edad
+		summarizeBy: sum
+		sourceColumn: edad
+
+		annotation SummarizationSetBy = Automatic
+
+	column genero
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: e935e8a7-82f3-4c25-92d6-7393bbfa2ee9
+		sourceLineageTag: genero
+		summarizeBy: none
+		sourceColumn: genero
+
+		annotation SummarizationSetBy = Automatic
+
+	column entidad
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: de8c3be6-2b61-4701-bcff-8b5193c41ec8
+		sourceLineageTag: entidad
+		summarizeBy: none
+		sourceColumn: entidad
+
+		annotation SummarizationSetBy = Automatic
+
+	column salario_base_mensual
+		dataType: double
+		sourceProviderType: float
+		lineageTag: 2dde210b-1bdc-468a-838c-e893e50b78d5
+		sourceLineageTag: salario_base_mensual
+		summarizeBy: sum
+		sourceColumn: salario_base_mensual
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column fecha_registro
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 03ed325d-0781-43a3-a34c-731327f99ce0
+		sourceLineageTag: fecha_registro
+		summarizeBy: none
+		sourceColumn: fecha_registro
+
+		annotation SummarizationSetBy = Automatic
+
+	partition afiliados = entity
+		mode: directLake
+		source
+			entityName: afiliados
+			schemaName: afore_data
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

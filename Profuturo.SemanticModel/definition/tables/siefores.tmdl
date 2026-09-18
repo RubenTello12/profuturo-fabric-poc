@@ -1,0 +1,46 @@
+table siefores
+	lineageTag: 5b34ea62-cbbc-40fd-b4b4-5e1cb7c5fa29
+	sourceLineageTag: [afore_data].[siefores]
+
+	column id_siefore
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 1b770dea-4912-403f-9daf-5d1277db8de8
+		sourceLineageTag: id_siefore
+		summarizeBy: sum
+		sourceColumn: id_siefore
+
+		annotation SummarizationSetBy = Automatic
+
+	column nombre_siefore
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: fd60080c-067e-4def-9cc9-ce6acd7bf4b5
+		sourceLineageTag: nombre_siefore
+		summarizeBy: none
+		sourceColumn: nombre_siefore
+
+		annotation SummarizationSetBy = Automatic
+
+	column vol_base
+		dataType: double
+		sourceProviderType: float
+		lineageTag: c4e427df-f681-4722-a42a-80916f590b0b
+		sourceLineageTag: vol_base
+		summarizeBy: sum
+		sourceColumn: vol_base
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition siefores = entity
+		mode: directLake
+		source
+			entityName: siefores
+			schemaName: afore_data
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

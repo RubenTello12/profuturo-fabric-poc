@@ -1,0 +1,67 @@
+table cuentas
+	lineageTag: 9ffe6bd7-6c8a-402c-9d1e-129ab0128021
+	sourceLineageTag: [afore_data].[cuentas]
+
+	column id_cuenta
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 8e4fd3fe-e521-47da-969e-0687fa0102c0
+		sourceLineageTag: id_cuenta
+		summarizeBy: sum
+		sourceColumn: id_cuenta
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_afiliado
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: 510c9916-5a6e-4b22-8b73-97dbc02f0eb5
+		sourceLineageTag: id_afiliado
+		summarizeBy: sum
+		sourceColumn: id_afiliado
+
+		annotation SummarizationSetBy = Automatic
+
+	column tipo_cuenta
+		dataType: string
+		sourceProviderType: varchar(-1)
+		lineageTag: daf3c0bf-0f97-4d46-bb32-2bc5a38df2f8
+		sourceLineageTag: tipo_cuenta
+		summarizeBy: none
+		sourceColumn: tipo_cuenta
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_siefore
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 2790ee32-5630-47c6-98eb-5565b771132c
+		sourceLineageTag: id_siefore
+		summarizeBy: sum
+		sourceColumn: id_siefore
+
+		annotation SummarizationSetBy = Automatic
+
+	column fecha_alta
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: a810056e-fc2b-4d3e-a82c-c1d501da0de7
+		sourceLineageTag: fecha_alta
+		summarizeBy: none
+		sourceColumn: fecha_alta
+
+		annotation SummarizationSetBy = Automatic
+
+	partition cuentas = entity
+		mode: directLake
+		source
+			entityName: cuentas
+			schemaName: afore_data
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

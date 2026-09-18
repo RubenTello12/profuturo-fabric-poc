@@ -1,0 +1,273 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/dataAgent/definition/dataSource/1.0.0/schema.json",
+  "artifactId": "77d10d59-7c2b-9809-434e-278e25b01342",
+  "workspaceId": "00000000-0000-0000-0000-000000000000",
+  "dataSourceInstructions": null,
+  "displayName": "Profuturo",
+  "type": "semantic_model",
+  "userDescription": null,
+  "metadata": null,
+  "elements": [
+    {
+      "id": "de25d8ba-0d56-45bd-8060-b4689a2ff43f",
+      "is_selected": true,
+      "display_name": "afiliados",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "826fef71-2e1b-49a1-bbd8-a523b870a1c0",
+          "is_selected": true,
+          "display_name": "id_afiliado",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c3c90f64-a95b-496b-9a73-e63710911b0f",
+          "is_selected": true,
+          "display_name": "edad",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "e935e8a7-82f3-4c25-92d6-7393bbfa2ee9",
+          "is_selected": true,
+          "display_name": "genero",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "de8c3be6-2b61-4701-bcff-8b5193c41ec8",
+          "is_selected": true,
+          "display_name": "entidad",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2dde210b-1bdc-468a-838c-e893e50b78d5",
+          "is_selected": true,
+          "display_name": "salario_base_mensual",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "03ed325d-0781-43a3-a34c-731327f99ce0",
+          "is_selected": true,
+          "display_name": "fecha_registro",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "9ffe6bd7-6c8a-402c-9d1e-129ab0128021",
+      "is_selected": true,
+      "display_name": "cuentas",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "8e4fd3fe-e521-47da-969e-0687fa0102c0",
+          "is_selected": true,
+          "display_name": "id_cuenta",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "510c9916-5a6e-4b22-8b73-97dbc02f0eb5",
+          "is_selected": true,
+          "display_name": "id_afiliado",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "daf3c0bf-0f97-4d46-bb32-2bc5a38df2f8",
+          "is_selected": true,
+          "display_name": "tipo_cuenta",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2790ee32-5630-47c6-98eb-5565b771132c",
+          "is_selected": true,
+          "display_name": "id_siefore",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "a810056e-fc2b-4d3e-a82c-c1d501da0de7",
+          "is_selected": true,
+          "display_name": "fecha_alta",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "c36b7499-a2b0-4ac2-bd02-88cf3ce45cbc",
+      "is_selected": true,
+      "display_name": "aportaciones",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "59f2f84f-2e6c-4f9e-863e-e7fd535090b3",
+          "is_selected": true,
+          "display_name": "id_aportacion",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "2735f48d-064c-40b5-a529-819c521f1c35",
+          "is_selected": true,
+          "display_name": "id_cuenta",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "8876a90d-cb08-439f-9719-5dd392102309",
+          "is_selected": true,
+          "display_name": "fecha",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "42911231-ea0b-4b25-8cc6-0864858b205b",
+          "is_selected": true,
+          "display_name": "tipo_aportacion",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "75a4ce4a-63d9-49d5-a688-d6e80d5047aa",
+          "is_selected": true,
+          "display_name": "monto",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "0ab73bfb-ddd7-42d8-bcf4-8c016c0bbc74",
+          "is_selected": true,
+          "display_name": "anio",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "5b34ea62-cbbc-40fd-b4b4-5e1cb7c5fa29",
+      "is_selected": true,
+      "display_name": "siefores",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "1b770dea-4912-403f-9daf-5d1277db8de8",
+          "is_selected": true,
+          "display_name": "id_siefore",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "fd60080c-067e-4def-9cc9-ce6acd7bf4b5",
+          "is_selected": true,
+          "display_name": "nombre_siefore",
+          "type": "semantic_model.column",
+          "data_type": "String",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "c4e427df-f681-4722-a42a-80916f590b0b",
+          "is_selected": true,
+          "display_name": "vol_base",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "50780441-8576-4c91-b408-fb52f3006db6",
+      "is_selected": true,
+      "display_name": "rendimientos",
+      "type": "semantic_model.table",
+      "description": null,
+      "children": [
+        {
+          "id": "65e31704-541c-4ae7-a133-39483fbac98c",
+          "is_selected": true,
+          "display_name": "fecha",
+          "type": "semantic_model.column",
+          "data_type": "DateTime",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "ec1dbb2f-78ac-483d-9c89-27c865a805db",
+          "is_selected": true,
+          "display_name": "id_siefore",
+          "type": "semantic_model.column",
+          "data_type": "Int64",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "d0b566f7-69c5-4670-846a-25d3173aa079",
+          "is_selected": true,
+          "display_name": "rendimiento_diario",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        },
+        {
+          "id": "f2073759-bcf4-43ce-9ad5-ac4ad58fa924",
+          "is_selected": true,
+          "display_name": "valor_accion",
+          "type": "semantic_model.column",
+          "data_type": "Double",
+          "description": null,
+          "children": []
+        }
+      ]
+    }
+  ]
+}

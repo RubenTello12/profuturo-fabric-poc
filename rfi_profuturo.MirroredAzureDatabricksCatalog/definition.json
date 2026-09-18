@@ -1,0 +1,15 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/mirroredAzureDatabricksCatalog/definition/mirroredAzureDatabricksCatalogDefinition/1.0.0/schema.json",
+  "autoSync": "Enabled",
+  "catalogName": "rfi_profuturo",
+  "databricksWorkspaceConnectionId": "e4d98a4b-2248-457c-b4b0-e7e7e96a8e42",
+  "mirrorConfiguration": {
+    "schemas": [
+      {
+        "mirroringMode": "Exclude",
+        "name": "default"
+      }
+    ]
+  },
+  "mirroringMode": "Full"
+}

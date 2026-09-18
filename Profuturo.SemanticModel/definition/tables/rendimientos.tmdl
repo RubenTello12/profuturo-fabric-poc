@@ -1,0 +1,59 @@
+table rendimientos
+	lineageTag: 50780441-8576-4c91-b408-fb52f3006db6
+	sourceLineageTag: [afore_data].[rendimientos]
+
+	column fecha
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 65e31704-541c-4ae7-a133-39483fbac98c
+		sourceLineageTag: fecha
+		summarizeBy: none
+		sourceColumn: fecha
+
+		annotation SummarizationSetBy = Automatic
+
+	column id_siefore
+		dataType: int64
+		formatString: 0
+		sourceProviderType: bigint
+		lineageTag: ec1dbb2f-78ac-483d-9c89-27c865a805db
+		sourceLineageTag: id_siefore
+		summarizeBy: sum
+		sourceColumn: id_siefore
+
+		annotation SummarizationSetBy = Automatic
+
+	column rendimiento_diario
+		dataType: double
+		sourceProviderType: float
+		lineageTag: d0b566f7-69c5-4670-846a-25d3173aa079
+		sourceLineageTag: rendimiento_diario
+		summarizeBy: sum
+		sourceColumn: rendimiento_diario
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column valor_accion
+		dataType: double
+		sourceProviderType: float
+		lineageTag: f2073759-bcf4-43ce-9ad5-ac4ad58fa924
+		sourceLineageTag: valor_accion
+		summarizeBy: sum
+		sourceColumn: valor_accion
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition rendimientos = entity
+		mode: directLake
+		source
+			entityName: rendimientos
+			schemaName: afore_data
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
